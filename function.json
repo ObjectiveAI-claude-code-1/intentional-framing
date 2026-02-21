@@ -1,16 +1,11 @@
 {
   "type": "scalar.function",
-  "input_schema": {
-    "type": "image",
-    "description": "A cat photograph to evaluate for intentional framing — whether the composition feels deliberate and positions the cat as the natural focal point of the image."
-  },
   "tasks": [
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat photograph to evaluate for subject placement and visual balance — whether the cat's position within the frame feels purposeful and anchored, and whether the composition achieves equilibrium."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-composition-balance",
+      "commit": "57dd38ef42b306213c99cbe3175ab59732620d39",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -20,11 +15,10 @@
       }
     },
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat photograph to evaluate for effective use of surrounding space — whether the negative space, background, and environment support the cat as the subject or undermine it through excess, clutter, or visual competition."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-surrounding-space-effectiveness",
+      "commit": "b09f83ee799c1d8c96c34ab1a04c1aef410138f7",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -48,5 +42,9 @@
       }
     }
   ],
-  "description": "Scores how deliberately and effectively a cat photograph is composed. Evaluates whether the cat feels like the intentional focal point of the frame by assessing subject placement and balance, use of surrounding space, and compositional flow toward the subject. Style-agnostic: no rigid rules, only whether the framing serves the cat."
+  "description": "Scores how deliberately and effectively a cat photograph is composed. Evaluates whether the cat feels like the intentional focal point of the frame by assessing subject placement and balance, use of surrounding space, and compositional flow toward the subject. Style-agnostic: no rigid rules, only whether the framing serves the cat.",
+  "input_schema": {
+    "type": "image",
+    "description": "A cat photograph to evaluate for intentional framing — whether the composition feels deliberate and positions the cat as the natural focal point of the image."
+  }
 }

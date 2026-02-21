@@ -28,17 +28,17 @@ A scalar value between **0** and **1**.
 The function decomposes intentional framing into three distinct dimensions, each assessed by a dedicated sub-function:
 
 ### 1. Subject Placement and Balance
-[{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }})
+[cat-composition-balance](https://github.com/ObjectiveAI-claude-code-1/cat-composition-balance)
 
 Evaluates where the cat sits within the frame and whether that position feels purposeful and anchored. Assesses whether the visual weight of the composition — the cat, its background, the negative space — is distributed in a way that creates equilibrium or purposeful tension. A well-placed cat feels like it could not reasonably be anywhere else without the image suffering for it. A poorly placed cat feels adrift, shoved into a corner, awkwardly cropped, or marooned in irrelevant space.
 
 ### 2. Effective Use of Surrounding Space
-[{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }})
+[cat-surrounding-space-effectiveness](https://github.com/ObjectiveAI-claude-code-1/cat-surrounding-space-effectiveness)
 
 Evaluates everything in the photograph that is not the cat — the negative space, background, and environment — and determines whether it supports or undermines the subject. The ideal surrounding space gives the cat room to breathe without dwarfing it, provides context or atmosphere without introducing clutter, and complements the subject the way a setting frames a jewel. Too much space makes the cat insignificant; too little makes it feel cramped; cluttered space fragments the image's coherence.
 
 ### 3. Compositional Flow Toward the Subject
-[{{ .Task2 }}](https://github.com/{{ .Owner }}/{{ .Task2 }})
+[{{ .Task2 }}](https://github.com/ObjectiveAI-claude-code-1/{{ .Task2 }})
 
 Evaluates whether the visual elements within the photograph — leading lines, natural boundaries, tonal contrasts, environmental geometry — create a current that guides the viewer's eye toward the cat. In a photograph with strong compositional flow, the eye arrives at the cat naturally and settles there with satisfaction. In a photograph with weak flow, the eye wanders without direction or is drawn to competing elements that make the cat feel incidental.
 

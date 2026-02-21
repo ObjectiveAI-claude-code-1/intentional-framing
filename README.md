@@ -27,15 +27,15 @@ A scalar value between **0** and **1**.
 
 The function decomposes intentional framing into three distinct qualities, each assessed by a dedicated sub-function:
 
-### 1. Subject Placement and Balance — [{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }})
+### 1. Subject Placement and Balance — [cat-compositional-balance](https://github.com/ObjectiveAI-claude-code-1/cat-compositional-balance)
 
 Evaluates where the cat sits within the frame and whether that position feels purposeful. A cat placed with care — whether centered with quiet symmetry or offset with dynamic tension — creates an instant sense of order. This sub-function rejects placements that feel accidental: a cat awkwardly cropped at an edge, crammed into a corner without justification, or marooned in an undifferentiated expanse of empty space. It asks whether the cat's position, among all possible positions, is the one that makes the photograph feel whole.
 
-### 2. Effective Use of Surrounding Space — [{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }})
+### 2. Effective Use of Surrounding Space — [cat-space-balance](https://github.com/ObjectiveAI-claude-code-1/cat-space-balance)
 
 Assesses whether the space around the cat plays a supporting role or competes with it. In strong compositions, the surrounding area gives the cat room to breathe — providing context without overwhelming the subject or stealing focus. This sub-function identifies problems such as backgrounds so cluttered that the eye has nowhere to rest, frames so wide that the cat is dwarfed into insignificance, or crops so tight that the cat feels trapped. It measures whether the cat has been given exactly the space it needs, no more and no less.
 
-### 3. Compositional Flow Toward the Subject — [{{ .Task2 }}](https://github.com/{{ .Owner }}/{{ .Task2 }})
+### 3. Compositional Flow Toward the Subject — [compositional-flow-toward-cat](https://github.com/ObjectiveAI-claude-code-1/compositional-flow-toward-cat)
 
 Determines whether the visual elements of the photograph guide the viewer's eye toward the cat. It traces the paths shaped by lines, edges, contrasts, and light gradients, assessing whether they converge on the subject. Leading lines — floorboards angling inward, shelves terminating at the cat, light brightening toward its face — create a sense of compositional inevitability. This sub-function identifies when the flow works against the subject: the eye drifting to competing focal points, following diagonals away from the cat, or wandering without resolution.
 

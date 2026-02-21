@@ -1,74 +1,49 @@
 # intentional-framing
 
-Scores how deliberate and effective the compositional framing of a cat photograph feels. Evaluates subject placement and balance, spatial harmony between the cat and its environment, and compositional flow toward the subject. Higher scores indicate photographs that feel composed around the cat rather than merely containing one.
+Evaluates the intentional framing of a cat photograph — whether the composition feels deliberate and positions the cat as the natural focal point of the image.
 
-## Purpose
+## Overview
 
-A cat photograph can be a portrait — a deliberate arrangement of space that honors the cat as its subject — or it can be something far less: an image that merely contains a cat, where the subject is incidental to the frame rather than the reason for it. **intentional-framing** distinguishes between these two outcomes.
+Not every photograph of a cat is a cat photograph. The difference lies in whether the frame exists in service of the cat. The `intentional-framing` function scores how deliberate and effective a photograph's composition feels by examining whether the cat is positioned within the frame in a way that naturally draws the viewer's eye, and whether the spatial arrangement of elements serves the cat as the clear subject.
 
-Given a cat photograph, this function evaluates whether the spatial relationship between the cat and everything else in the frame serves the cat as the focal point. It asks a deceptively simple question: does this photograph feel like it was made for this cat in this moment?
+This evaluation is not about enforcing rigid compositional rules like the rule of thirds. A cat sitting dead center in a simple frame can score beautifully. A cat caught along a dynamic diagonal can score just as well. What matters is whether the framing feels like it was made for this cat in this moment — whether the viewer senses that the image was composed around its subject.
 
-This is not an evaluation of rigid compositional rules. The rule of thirds is irrelevant here. A cat sitting dead center in a quiet frame can score beautifully. A cat caught along a sweeping diagonal can score just as well. What matters is whether the framing feels purposeful — whether the composition, however it was achieved, works in the cat's favor.
+Strong intentional framing means the spatial relationship between the cat and its surrounding space serves the subject — the cat is given room to breathe but is not dwarfed by its environment, and the composition works with the subject rather than against it. Weak framing makes the cat feel like an afterthought — the background dominates, the cat is marginal, or the crop disrupts the viewer's ability to appreciate the subject.
 
 ## Input
 
-The function receives a single **cat photograph** as input — the complete image as captured or cropped. Every element within the frame becomes part of the evaluation: the cat itself, the space around it, the objects and textures that populate the background and foreground, and the boundaries of the image where the photographer's world ends.
-
-The photograph is treated as a finished composition. The function does not speculate about what lies beyond the frame. It evaluates the spatial reality of the image as it exists and asks whether that reality serves the subject.
+The function receives a single input: a **cat photograph** (image). The image is evaluated purely on its visual information — no metadata about the photographer's intent, camera settings, or circumstances of capture is required. The function assesses the result, not the process: a lucky snapshot that frames the cat perfectly scores just as well as a carefully composed portrait.
 
 ## Output
 
-A **scalar score between 0 and 1**.
+A scalar score between **0** and **1**, where:
 
-- Scores approaching **1.0** indicate compositions where the framing feels highly intentional — the cat is placed with purpose, given space that serves it, and surrounded by visual structure that draws the viewer in.
-- Scores approaching **0.0** indicate compositions where the cat feels like an afterthought — lost in the frame, overwhelmed by its environment, or trapped in a composition that was never designed around it.
-- Scores in the **middle range** indicate partial intentionality — photographs where some dimensions of framing work in the cat's favor while others fall short.
+- **Scores near 1.0** indicate strong intentional framing — the photograph feels like a portrait of a cat, with purposeful placement, cooperative surrounding space, and visual flow that draws the eye to the subject.
+- **Scores near 0.0** indicate weak or absent framing — the cat feels like an afterthought, randomly placed, lost in empty space, or competing with a chaotic environment for the viewer's attention.
 
 ## What It Evaluates
 
-The function assesses three interconnected dimensions of compositional framing. Each captures a different aspect of how the frame relates to its subject.
+The function decomposes intentional framing into three distinct dimensions, each evaluated by a dedicated sub-function:
 
-### 1. Subject Placement and Balance
+### 1. Subject Placement and Balance — [{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }})
 
-> [cat-subject-placement](https://github.com/ObjectiveAI-claude-code-1/cat-subject-placement)
+Examines where the cat is positioned relative to the boundaries of the frame and whether that placement feels purposeful or arbitrary. A well-placed cat feels settled in the composition — it belongs where it is, whether centered or off to one side, because the position creates visual equilibrium. Scores poorly when the cat feels abandoned by the frame: shoved into a corner, pressed against an edge, or adrift in a vast emptiness.
 
-Evaluates where the cat is positioned within the architecture of the frame and whether that placement feels purposeful. Strong placement means the cat anchors the composition with a clear center of gravity — the viewer immediately understands where to look. There is a sense of visual equilibrium between the weight of the subject and the weight of the surrounding space.
+### 2. Effective Use of Surrounding Space — [{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }})
 
-**Strong signals:** The cat occupies its position with a sense of belonging, as though the frame was drawn around it. The placement feels chosen, even if captured in a fleeting moment. The composition has balance — not rigid symmetry, but the kind of equilibrium where subject and space feel in conversation.
+Assesses the space around the cat — negative space, background, and environment — and whether it serves the subject or works against it. Evaluates both the amount of space (not too cramped, not too vast) and its quality (supportive vs. cluttered and distracting). Scores highly when the cat feels prominent without feeling cramped and the surrounding space cooperates with the subject.
 
-**Weak signals:** The cat is crammed against an edge, awkwardly bisected by the frame boundary, or marooned in emptiness without compositional reason. The viewer's eye wanders, unsure of what the photograph is about. The cat is technically present but compositionally absent.
+### 3. Compositional Flow Toward the Subject — [{{ .Task2 }}](https://github.com/{{ .Owner }}/{{ .Task2 }})
 
-### 2. Spatial Harmony
+Determines whether the visual structure of the image — lines, shapes, edges, boundaries, light, and spatial cues — guides the viewer's eye naturally toward the cat. Looks for leading lines, natural frames, light gradients, and converging geometry. Scores highly when the gaze arrives at the cat effortlessly, as if the entire visual world of the photograph was arranged to deliver the viewer to its subject.
 
-> [cat-spatial-harmony](https://github.com/ObjectiveAI-claude-code-1/cat-spatial-harmony)
+## Use Cases
 
-Evaluates the relationship between the cat and the space around it — negative space, background elements, and foreground objects — and whether that relationship serves the subject. The negotiation between subject and environment should be resolved in the cat's favor.
+- **Photo scoring** — Distinguish well-composed cat portraits from careless snapshots in rating or ranking systems.
+- **Content curation** — Surface images where the cat is truly the star rather than a bystander in large photo collections or feeds.
+- **Photography feedback** — Provide compositional guidance to aspiring pet photographers on whether their framing choices are effective.
+- **Quality filtering** — Filter out poorly framed images in pipelines that collect, process, or display cat photography.
 
-**Strong signals:** The cat is given room to breathe without being dwarfed. Negative space feels purposeful — it frames, cushions, and stages the cat. Background elements belong to the same visual story as the subject rather than competing with it. The environment acts as a stage for the cat.
+## Scoring Philosophy
 
-**Weak signals:** The background overwhelms the subject with busy textures or dominant shapes. Framing is so tight the cat feels claustrophobic, or emptiness is so vast the cat feels abandoned. The space works against the subject rather than for it — the environment is a distraction, not a stage.
-
-### 3. Compositional Flow
-
-> [cat-compositional-flow](https://github.com/ObjectiveAI-claude-code-1/cat-compositional-flow)
-
-Evaluates whether the visual structure of the image — lines, shapes, boundaries, and tonal contrasts — creates pathways that guide the viewer's eye toward the cat. What matters is the cumulative effect: whether the image has a visual current that carries the viewer to the subject.
-
-**Strong signals:** Leading lines converge toward the cat. Natural frames such as doorways or arches isolate the subject. Pools of light, gradients of focus, or tonal shifts make the cat pop against its background. The viewer's eye arrives at the subject effortlessly and inevitably.
-
-**Weak signals:** The eye bounces around the frame without direction. No visual cues guide attention toward the cat. The subject must compete for the attention it should naturally command. The image lacks a sense of visual order that works in the cat's favor.
-
-## Use-Cases
-
-- **Photo curation and ranking**: Surface cat photographs where the cat feels like the protagonist rather than a bystander in its own picture.
-- **Photographer feedback**: Assess whether compositional instincts are translating into images that honor the subject.
-- **Automated filtering**: In pipelines processing large volumes of cat imagery, filter out photographs where the cat is lost, marginal, or awkwardly trapped within a frame that was never designed around it.
-- **Quality benchmarking**: Use as a foundational compositional signal alongside other quality dimensions such as lighting, focus, and expression.
-
-## Sub-Functions
-
-| # | Sub-Function | What It Evaluates |
-|---|---|---|
-| 0 | [cat-subject-placement](https://github.com/ObjectiveAI-claude-code-1/cat-subject-placement) | Subject placement and balance within the frame |
-| 1 | [cat-spatial-harmony](https://github.com/ObjectiveAI-claude-code-1/cat-spatial-harmony) | Spatial harmony between the cat and its environment |
-| 2 | [cat-compositional-flow](https://github.com/ObjectiveAI-claude-code-1/cat-compositional-flow) | Compositional flow toward the subject |
+The function's final score is a weighted combination of all three sub-function evaluations. None of the three qualities exist in isolation — a perfectly placed cat in a cluttered, directionless composition still feels accidental, and a beautifully flowing image with a cramped, poorly balanced subject still feels like a missed opportunity. It is in the harmony of all three that true intentional framing emerges: the sense that the photograph is not merely an image containing a cat, but a composition built around one.

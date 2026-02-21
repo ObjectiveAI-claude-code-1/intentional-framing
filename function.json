@@ -1,11 +1,16 @@
 {
   "type": "scalar.function",
+  "input_schema": {
+    "type": "image",
+    "description": "A cat photograph to evaluate for intentional framing — whether the composition feels deliberate and positions the cat as the natural focal point of the image."
+  },
   "tasks": [
     {
-      "type": "scalar.function",
-      "owner": "ObjectiveAI-claude-code-1",
-      "repository": "cat-subject-placement",
-      "commit": "13956f4d75124d9b7354a61f9a5e6fe6eb60a350",
+      "type": "placeholder.scalar.function",
+      "input_schema": {
+        "type": "image",
+        "description": "A cat photograph to evaluate for subject placement and balance — whether the cat's position within the frame feels purposeful and creates visual equilibrium."
+      },
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -15,10 +20,11 @@
       }
     },
     {
-      "type": "scalar.function",
-      "owner": "ObjectiveAI-claude-code-1",
-      "repository": "cat-spatial-harmony",
-      "commit": "b6ee1885e4639012ff5d898cdf45563a2ba0f0c4",
+      "type": "placeholder.scalar.function",
+      "input_schema": {
+        "type": "image",
+        "description": "A cat photograph to evaluate for effective use of surrounding space — whether the negative space, background, and environment serve the cat as subject or compete with it."
+      },
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -28,10 +34,11 @@
       }
     },
     {
-      "type": "scalar.function",
-      "owner": "ObjectiveAI-claude-code-1",
-      "repository": "cat-compositional-flow",
-      "commit": "00c5960b94a08aff863b630b7c96d0045f1ae474",
+      "type": "placeholder.scalar.function",
+      "input_schema": {
+        "type": "image",
+        "description": "A cat photograph to evaluate for compositional flow toward the subject — whether the visual structure of the image guides the viewer's eye naturally toward the cat."
+      },
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -41,9 +48,5 @@
       }
     }
   ],
-  "description": "Scores how deliberate and effective the compositional framing of a cat photograph feels. Evaluates subject placement and balance, spatial harmony between the cat and its environment, and compositional flow toward the subject. Higher scores indicate photographs that feel composed around the cat rather than merely containing one.",
-  "input_schema": {
-    "type": "image",
-    "description": "A cat photograph to evaluate for intentional framing — whether the composition feels deliberate and positions the cat as the natural focal point of the image."
-  }
+  "description": "Evaluates the intentional framing of a cat photograph — whether the composition feels deliberate and positions the cat as the natural focal point. Scores three dimensions: subject placement and balance, effective use of surrounding space, and compositional flow toward the subject."
 }

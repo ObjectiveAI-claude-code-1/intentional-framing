@@ -30,7 +30,7 @@ The function assesses three interconnected dimensions of compositional framing. 
 
 ### 1. Subject Placement and Balance
 
-> [{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }})
+> [cat-subject-placement](https://github.com/ObjectiveAI-claude-code-1/cat-subject-placement)
 
 Evaluates where the cat is positioned within the architecture of the frame and whether that placement feels purposeful. Strong placement means the cat anchors the composition with a clear center of gravity — the viewer immediately understands where to look. There is a sense of visual equilibrium between the weight of the subject and the weight of the surrounding space.
 
@@ -40,7 +40,7 @@ Evaluates where the cat is positioned within the architecture of the frame and w
 
 ### 2. Spatial Harmony
 
-> [{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }})
+> [cat-spatial-harmony](https://github.com/ObjectiveAI-claude-code-1/cat-spatial-harmony)
 
 Evaluates the relationship between the cat and the space around it — negative space, background elements, and foreground objects — and whether that relationship serves the subject. The negotiation between subject and environment should be resolved in the cat's favor.
 
@@ -50,7 +50,7 @@ Evaluates the relationship between the cat and the space around it — negative 
 
 ### 3. Compositional Flow
 
-> [{{ .Task2 }}](https://github.com/{{ .Owner }}/{{ .Task2 }})
+> [cat-compositional-flow](https://github.com/ObjectiveAI-claude-code-1/cat-compositional-flow)
 
 Evaluates whether the visual structure of the image — lines, shapes, boundaries, and tonal contrasts — creates pathways that guide the viewer's eye toward the cat. What matters is the cumulative effect: whether the image has a visual current that carries the viewer to the subject.
 
@@ -69,6 +69,6 @@ Evaluates whether the visual structure of the image — lines, shapes, boundarie
 
 | # | Sub-Function | What It Evaluates |
 |---|---|---|
-| 0 | [{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }}) | Subject placement and balance within the frame |
-| 1 | [{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }}) | Spatial harmony between the cat and its environment |
-| 2 | [{{ .Task2 }}](https://github.com/{{ .Owner }}/{{ .Task2 }}) | Compositional flow toward the subject |
+| 0 | [cat-subject-placement](https://github.com/ObjectiveAI-claude-code-1/cat-subject-placement) | Subject placement and balance within the frame |
+| 1 | [cat-spatial-harmony](https://github.com/ObjectiveAI-claude-code-1/cat-spatial-harmony) | Spatial harmony between the cat and its environment |
+| 2 | [cat-compositional-flow](https://github.com/ObjectiveAI-claude-code-1/cat-compositional-flow) | Compositional flow toward the subject |

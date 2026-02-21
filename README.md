@@ -25,15 +25,15 @@ A scalar score between **0** and **1**, where:
 
 The function decomposes intentional framing into three distinct dimensions, each evaluated by a dedicated sub-function:
 
-### 1. Subject Placement and Balance — [{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }})
+### 1. Subject Placement and Balance — [cat-frame-balance](https://github.com/ObjectiveAI-claude-code-1/cat-frame-balance)
 
 Examines where the cat is positioned relative to the boundaries of the frame and whether that placement feels purposeful or arbitrary. A well-placed cat feels settled in the composition — it belongs where it is, whether centered or off to one side, because the position creates visual equilibrium. Scores poorly when the cat feels abandoned by the frame: shoved into a corner, pressed against an edge, or adrift in a vast emptiness.
 
-### 2. Effective Use of Surrounding Space — [{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }})
+### 2. Effective Use of Surrounding Space — [cat-photo-spatial-composition](https://github.com/ObjectiveAI-claude-code-1/cat-photo-spatial-composition)
 
 Assesses the space around the cat — negative space, background, and environment — and whether it serves the subject or works against it. Evaluates both the amount of space (not too cramped, not too vast) and its quality (supportive vs. cluttered and distracting). Scores highly when the cat feels prominent without feeling cramped and the surrounding space cooperates with the subject.
 
-### 3. Compositional Flow Toward the Subject — [{{ .Task2 }}](https://github.com/{{ .Owner }}/{{ .Task2 }})
+### 3. Compositional Flow Toward the Subject — [compositional-flow-to-subject](https://github.com/ObjectiveAI-claude-code-1/compositional-flow-to-subject)
 
 Determines whether the visual structure of the image — lines, shapes, edges, boundaries, light, and spatial cues — guides the viewer's eye naturally toward the cat. Looks for leading lines, natural frames, light gradients, and converging geometry. Scores highly when the gaze arrives at the cat effortlessly, as if the entire visual world of the photograph was arranged to deliver the viewer to its subject.
 

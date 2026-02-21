@@ -25,15 +25,15 @@ A scalar value between `0` and `1`, where higher values indicate stronger intent
 
 The function decomposes intentional framing into three dimensions, each evaluated by a dedicated sub-function. The final score is the weighted average of all three evaluations.
 
-### 1. Subject Placement and Balance — [`{{ .Task0 }}`](https://github.com/{{ .Owner }}/{{ .Task0 }})
+### 1. Subject Placement and Balance — [`cat-subject-placement-balance`](https://github.com/ObjectiveAI-claude-code-1/cat-subject-placement-balance)
 
 Examines where the cat sits within the boundaries of the frame and whether that placement creates a sense of visual balance and purposeful anchoring. The cat does not need to be centered or conform to any geometric rule — what matters is that its position feels chosen rather than accidental. Scores high when the cat occupies its space with quiet authority, creating stability and focus. Scores low when the cat is awkwardly cropped, shoved into a margin, or lost without spatial intention.
 
-### 2. Effective Use of Surrounding Space — [`{{ .Task1 }}`](https://github.com/{{ .Owner }}/{{ .Task1 }})
+### 2. Effective Use of Surrounding Space — [`surrounding-space-effectiveness`](https://github.com/ObjectiveAI-claude-code-1/surrounding-space-effectiveness)
 
 Looks outward from the cat to the space that surrounds it and assesses whether that space serves the subject as a compositional tool. Surrounding space is not emptiness — it is context and breathing room. Scores high when the space around the cat gives the subject room to breathe while keeping it prominent and distinct. Scores low when the cat is either suffocated by clutter or diminished into insignificance by an overwhelming expanse of environment.
 
-### 3. Compositional Flow Toward the Subject — [`{{ .Task2 }}`](https://github.com/{{ .Owner }}/{{ .Task2 }})
+### 3. Compositional Flow Toward the Subject — [`compositional-flow`](https://github.com/ObjectiveAI-claude-code-1/compositional-flow)
 
 Assesses whether the visual structure of the image — its lines, shapes, edges, light, and geometry — guides the viewer's eye toward the cat. Scores high when the viewer's eye arrives at the cat almost without effort, carried by leading lines, natural framing elements, light placement, or subtle geometric cues. Scores low when the eye wanders without direction, distracted by competing elements or left without a path to the subject.
 
